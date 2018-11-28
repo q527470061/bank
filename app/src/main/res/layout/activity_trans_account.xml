@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.star.bank.TransAccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_white">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/text_topbar"
+            android:text="我要转账"/>
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/bg_black"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/bg_black"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/div_white"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_silver"
+        android:layout_below="@+id/ly_top_bar">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bg_white">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="付款账户"
+                android:textColor="@color/text_balck"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:paddingLeft="4dp"
+                android:paddingTop="11dp"
+                android:paddingBottom="11dp"
+                android:paddingRight="-10dp"
+                />
+
+            <Spinner
+                android:id="@+id/self_cardid"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_margin="9dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="可用余额:"
+                android:textSize="17sp"
+                android:textColor="@color/text_white"
+                />
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_width="70sp"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_orange"
+                android:textSize="17sp"
+                android:text="人民币元"/>
+
+            <TextView
+                android:id="@+id/self_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_orange"
+                android:textSize="17sp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="8dp"
+                android:text="23244.9"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_balck"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="币种"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="人民币元"
+                android:textSize="18sp"
+                android:textColor="@color/text_gray"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_balck"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="转账金额"/>
+
+            <EditText
+                android:id="@+id/zhuan_money"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入"
+                android:textColorHint="@color/text_gray"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/text_balck"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_balck"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="收款人名称"/>
+
+            <EditText
+                android:id="@+id/zhuan_userid"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入"
+                android:textColorHint="@color/text_gray"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/text_balck"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_balck"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="收款账号"/>
+
+            <EditText
+                android:id="@+id/zhuan_cardid"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入"
+                android:textColorHint="@color/text_gray"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/text_balck"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_balck"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:text="附言"/>
+
+            <EditText
+                android:id="@+id/transmessage"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入"
+                android:textColorHint="@color/text_gray"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:textColor="@color/text_balck"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/zhuanzhang"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/text_blue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="确认"
+            android:onClick="transAccount"/>
+    </LinearLayout>
+
+    
+</RelativeLayout>

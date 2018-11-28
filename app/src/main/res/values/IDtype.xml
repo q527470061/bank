@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>居民身份证</item>
+        <item>军人身份证件</item>
+        <item>护照（中国除外）</item>
+        <item>大陆通行证（台、澳、港）</item>
+    </string-array>
+</resources>

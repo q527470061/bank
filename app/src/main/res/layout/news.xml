@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/news_menu_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/bg_white">
+
+        <RadioButton
+            android:id="@+id/tuijian"
+            style="@style/news_menu_item"
+            android:text="推荐"/>
+
+        <RadioButton
+            android:id="@+id/industrynews"
+            style="@style/news_menu_item"
+            android:text="行业新闻"/>
+
+        <RadioButton
+            android:id="@+id/self_news"
+            style="@style/news_menu_item"
+            android:text="本行新闻"/>
+
+        <RadioButton
+            android:id="@+id/country_news"
+            style="@style/news_menu_item"
+            android:text="国内动态"
+            />
+
+        <RadioButton
+            android:id="@+id/international_news"
+            style="@style/news_menu_item"
+            android:text="国际形势"
+            />
+
+        <RadioButton
+            style="@style/news_menu_item"
+            android:text="军事"
+            />
+
+        <RadioButton
+            style="@style/news_menu_item"
+            android:text="娱乐"
+            />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/div_white"
+        android:layout_above="@+id/news_list"
+        android:layout_below="@+id/news_menu_group"/>
+
+    <FrameLayout
+        android:id="@+id/news_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/div_tab_bar2"
+        android:background="@color/bg_darkgray">
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

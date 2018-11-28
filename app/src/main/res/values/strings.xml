@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">手机银行</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tab_menu_alert">首页</string>
+    <string name="tab_menu_profile">金融</string>
+    <string name="tab_menu_pay">新闻</string>
+    <string name="tab_menu_setting">设置</string>
+
+    <string name="main_function_menu1">账户管理</string>
+    <string name="main_function_menu2">转账汇款</string>
+    <string name="main_function_menu3">信用卡</string>
+    <string name="main_function_menu4">贷款</string>
+    <string name="main_function_menu5">结汇购汇</string>
+    <string name="main_function_menu6">中银理财</string>
+    <string name="main_function_menu7">基金</string>
+    <string name="main_function_menu8">更多</string>
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/registe"
+android:orientation="vertical"
+tools:context="com.star.bank.RegisteActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="快速注册"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="用户名"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-40dp"
+        android:hint="请输入用户名" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="证件类型"
+        android:textSize="20sp"
+
+        />
+
+    <Spinner
+        android:id="@+id/et_sf"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-40dp"
+        android:entries="@array/data"
+        android:spinnerMode="dialog"
+        />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="证件号码"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/reg_id"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-40dp"
+        android:hint="请输入开户证件号码" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="支付密码"
+        android:textSize="20sp"
+        tools:ignore="DuplicateIds" />
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-40dp"
+        android:inputType="textPassword"
+        android:hint="请输入密码"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="手机号码"
+            android:textSize="20sp"
+            tools:ignore="DuplicateIds" />
+        <EditText
+            android:id="@+id/reg_phone"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-40dp"
+            android:inputType="textPassword"
+            android:hint="请输入手机号码"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="家庭地址    "
+        android:textSize="20sp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/reg_address"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-40dp"
+        android:hint="请输入地址" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:text="本人已经仔细阅读《手机银行个人客户电子银行快速注册须知》"
+        android:textColor="#ff0000" />
+
+
+    <Button
+        android:id="@+id/registe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="#1ddce2"
+        android:text="下一步"
+        android:onClick="registeRequest"/>
+
+
+</LinearLayout>

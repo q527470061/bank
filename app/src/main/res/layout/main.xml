@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_whitesmoke"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_gun"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@mipmap/pic1"/>
+
+    <!--菜单功能无法实现，舍去gridview
+    <GridView
+        android:id="@+id/grid_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:numColumns="4" />-->
+
+<!--    mData.add(new Function(R.mipmap.menu1,"账户管理"));
+    mData.add(new Function(R.mipmap.menu2,"转账汇款"));
+    mData.add(new Function(R.mipmap.menu3,"信用卡"));
+    mData.add(new Function(R.mipmap.menu4,"贷款"));
+    mData.add(new Function(R.mipmap.menu1,"结汇购汇"));
+    mData.add(new Function(R.mipmap.menu2,"中银理财"));
+    mData.add(new Function(R.mipmap.menu4,"基金"));
+    mData.add(new Function(R.mipmap.menu3,"更多"));-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:id="@+id/accout_menu">
+
+            <ImageView
+                android:id="@+id/img_function"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu1" />
+
+            <TextView
+                android:id="@+id/txt_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="账户管理"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:id="@+id/function_zhuanzhang"
+            >
+
+            <ImageView
+                android:id="@+id/img_function2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu3" />
+
+            <TextView
+                android:id="@+id/txt_function2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="转账汇款"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1"
+            android:id="@+id/bill_menu">
+
+            <ImageView
+                android:id="@+id/img_function3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu3" />
+
+            <TextView
+                android:id="@+id/txt_function3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="账单"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_function4"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu4" />
+
+            <TextView
+                android:id="@+id/txt_function4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="贷款"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_function6"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu1" />
+
+            <TextView
+                android:id="@+id/txt_function6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="结汇购汇"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_function5"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu2" />
+
+            <TextView
+                android:id="@+id/txt_function5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="中银理财"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_function7"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu4" />
+
+            <TextView
+                android:id="@+id/txt_function7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="基金"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_function8"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/menu3" />
+
+            <TextView
+                android:id="@+id/txt_function8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_function8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="更多"
+                android:textSize="14sp"
+                android:textColor="@color/bg_black"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/licai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+    </ListView>
+
+    <ListView
+        android:id="@+id/fund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+    </ListView>
+</LinearLayout>

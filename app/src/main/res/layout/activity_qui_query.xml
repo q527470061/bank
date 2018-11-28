@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/card2"
+android:orientation="vertical"
+tools:context="com.star.bank.QuiQueryActivity">
+
+<TextView
+    android:id="@+id/sj_bank"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    android:text="手机银行"
+    android:textColor="#000"
+    android:textSize="40sp"
+    android:typeface="sans"
+
+    />
+
+<ImageView
+    android:id="@+id/img2"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center|left"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="-45dp"
+    android:layout_toLeftOf="@+id/sj_bank"
+    android:src="@drawable/pic1" />
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="-30dp"
+    android:text="Back of Mobile"
+    android:textSize="23.5sp" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="银行卡号:"
+    android:textSize="20sp"
+    android:textColor="#000"
+    android:layout_marginLeft="20dp"/>
+
+<EditText
+    android:id="@+id/et_cardid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="请输入银行卡号"
+    android:layout_marginLeft="120dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="-40dp"/>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="密码:"
+    android:textSize="20sp"
+    android:textColor="#000"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="40dp"/>
+
+<EditText
+    android:id="@+id/card_password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="请输入密码"
+    android:layout_marginLeft="120dp"
+    android:layout_marginRight="140dp"
+    android:layout_marginTop="-40dp"/>
+
+
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="30dp"
+    android:text="查询"
+    android:textSize="20sp"
+    android:background="#00c4ff"
+    android:onClick="selectCard"/>
+
+
+</LinearLayout>

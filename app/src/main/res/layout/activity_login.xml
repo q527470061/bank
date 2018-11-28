@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login"
+    android:orientation="vertical"
+    tools:context="com.star.bank.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/sj_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="手机银行"
+        android:textColor="@color/text_balck"
+        android:textSize="40sp"
+        android:typeface="sans"
+        />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-45dp"
+            android:layout_toLeftOf="@+id/sj_bank"
+            android:src="@drawable/pic1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-30dp"
+        android:text="Back of Mobile"
+        android:textColor="@color/text_balck"
+        android:textSize="23.5sp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="请输入用户名"
+        android:textColorHint="@color/text_gray"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColorHint="@color/text_gray"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/cb_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="10dp"
+        android:text="记住密码"
+        android:textColor="@color/text_blue"/>
+
+    <TextView
+        android:id="@+id/wj_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="-27dp"
+        android:text="忘记密码?             "
+        android:textColor="@color/text_blue" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#f90f07"
+            android:onClick="loginHandle"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zw_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="指纹解锁"
+        android:textColor="#056fd9"
+        android:textSize="17sp"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/ks_zc"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:text="快速注册"
+        android:textColor="@color/text_blue"
+        android:paddingLeft="15dp"
+        android:onClick="registe"
+        />
+
+
+    <TextView
+        android:id="@+id/ks_cx"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-50dp"
+        android:text="快速查询余额"
+        android:textColor="@color/text_blue"
+        android:onClick="quickQuery"
+        />
+
+
+    <TextView
+        android:id="@+id/ks_kh"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-50dp"
+        android:text="首页"
+        android:textColor="@color/text_blue"
+        android:paddingRight="15dp"
+        android:onClick="goMain"/>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:paddingTop="3dp"
+        android:paddingLeft="7dp">
+
+        <TextView
+            android:id="@+id/percent"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.05%"
+            android:textColor="@color/text_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预期收益率"
+            android:textSize="10sp"
+            android:textColor="@color/text_silver"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_weight="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尊享2018年第15期"
+            android:textSize="16sp"
+            android:textColor="@color/text_balck"
+            />
+
+        <TextView
+            android:id="@+id/explain"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5万起|450天|期间不可赎回"
+            android:textSize="10sp"
+            android:textColor="@color/text_silver"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买"
+            android:textSize="15sp"
+            android:textColor="@color/text_orange"/>
+    </LinearLayout>
+
+</LinearLayout>
